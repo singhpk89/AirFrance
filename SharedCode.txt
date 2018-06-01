@@ -1,0 +1,301 @@
+  /*********************************************************************************************
+    @author Prakash
+    @Step1 Check all required permission
+    @Step2 Enable bluetooth default adapter if disables and create instance of
+    bluetooth adapter
+     */
+    @AfterPermissionGranted(RC_LOCATION_PERM)
+    public void locationTask() {
+        if (hasLocationPermissions()) {
+            Log.e("Permissions","start process");
+            if(getBLEAdapter()){
+                startDiscovery();
+            }
+        } else {
+            // Ask for both permissions
+            Log.e("Permissions","requestPermissions");
+            EasyPermissions.requestPermissions(
+                    this,
+                    "Allow Location permission",
+                    RC_LOCATION_PERM,
+                    LOCATION);
+        }
+    }
+
+
+
+ /*********************************************************************************************
+    Called with reference of func locationTask
+    @author Prakash
+    @Step1 Enable bluetooth default adapter if disables and create instance of
+    bluetooth adapter
+     */
+
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR2)
+    public boolean getBLEAdapter(){
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if(!mBluetoothAdapter.isEnabled()){
+            mBluetoothAdapter.enable();
+        }
+        // Checks if Bluetooth is supported on the device.
+        if (mBluetoothAdapter == null) {
+            status.setText("No BLE feature found on this device");
+            printPass.setEnabled(false);
+            connectKiosk.setEnabled(false);
+            return false;
+        }else if(!mBluetoothAdapter.isEnabled()){
+            mBluetoothAdapter.enable();
+        }
+        status.setVisibility(View.GONE);
+        printPass.setEnabled(true);
+        connectKiosk.setEnabled(true);
+        return true;
+    }
+
+/*********************************************************************************************
+    Called with reference of func locationTask
+    @author Prakash
+    @Step1 Searching for near bluetooth devices
+    @Step2 Register for IntentFilter ACTION_STATE_CHANGED,ACTION_FOUND,
+    ACTION_DISCOVERY_STARTED,ACTION_DISCOVERY_FINISHED
+     */
+  public void startDiscovery(){
+        startBleSearch();
+        mBluetoothAdapter.startDiscovery();
+        IntentFilter filter = new IntentFilter();
+        filter.addAction(BluetoothAdapter.ACTION_STATE_CHANGED);
+        filter.addAction(BluetoothDevice.ACTION_FOUND);
+        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_STARTED);
+        filter.addAction(BluetoothAdapter.ACTION_DISCOVERY_FINISHED);
+        status.setVisibility(View.VISIBLE);
+        status.setText("Looking for kiosk...");
+        registerReceiver(mReceiver, filter);
+    }
+
+
+/*********************************************************************************************
+    Called with reference of func startDiscovery
+    @author Prakash
+    @Step1 Receiver received for ACTION_STATE_CHANGED,ACTION_FOUND,
+      ACTION_DISCOVERY_STARTED,ACTION_DISCOVERY_FINISHED
+     */
+
+    private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
+
+        @Override
+        public void onReceive(Context context, Intent intent) {
+
+            if(intent.getAction()==null){
+                status.setText("UNKNOW EVENT ");
+            }else if(intent.getAction().equalsIgnoreCase(BluetoothDevice.ACTION_FOUND)){
+                Log.e("mReceiver","ACTION_FOUND");
+                BluetoothDevice device = (BluetoothDevice) intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                status.setText("LAST FOUND DEVICE :- "+device.getName());
+
+                if(device==null) {
+
+                }else if(device.getName()==null) {
+
+                }else if(device.getName().startsWith("ICTSKIOSK")){
+                    mBluetoothAdapter.cancelDiscovery();
+                    selectedDevice = device;
+                    searchView.setVisibility(View.GONE);
+                    printView.setVisibility(View.VISIBLE);
+                    print(device);
+
+                }
+
+
+            }else if(intent.getAction().equalsIgnoreCase(BluetoothAdapter.ACTION_DISCOVERY_STARTED)){
+                Log.e("mReceiver","ACTION_DISCOVERY_STARTED");
+                status.setText("BLE DISCOVERY STARTED");
+
+            }else if(intent.getAction().equalsIgnoreCase(BluetoothAdapter.ACTION_DISCOVERY_FINISHED)){
+                Log.e("mReceiver","ACTION_DISCOVERY_FINISHED");
+                status.setText("BLE DISCOVERY FINISHED");
+
+            }
+
+
+        }
+    };
+
+/*********************************************************************************************
+
+    @author Prakash
+    @Step1 Thread for connection with Kiosk
+     */
+
+    public class Connection extends Thread{
+            private BluetoothDevice bluetoothDevice;
+            private final String UUIDSTR = "01234567-0123-4567-8901-fcd82f1e0677";
+            private BluetoothSocket bluetoothSocket = null;
+            public Connection(BluetoothDevice device){
+                try {
+                    bluetoothDevice = device;
+                    bluetoothSocket = device.createInsecureRfcommSocketToServiceRecord(UUID.fromString(UUIDSTR));
+
+                }catch (final Exception e){
+                    hide();
+
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            HomeActivity.this.showAlert("Unable to create scoket connection "+e.getMessage());
+                        }
+                    });
+
+                }
+            }
+
+
+            @Override
+            public void run() {
+                super.run();
+
+                try{
+                    if(bluetoothSocket==null){
+                        hide();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                HomeActivity.this.showAlert("Socket Not connected.");
+                            }
+                        });
+                    }else{
+
+                        // BluetoothManager manager = (BluetoothManager)getSystemService(Context.BLUETOOTH_SERVICE);
+                        //manager.getAdapter().listenUsingInsecureRfcommWithServiceRecord(bluetoothDevice.getName(),UUID.fromString(UUIDSTR));
+                        bluetoothSocket.connect();
+                        connectedSocket = bluetoothSocket;
+                        Thread.sleep(750);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                               // new PrintThread(bluetoothSocket).start();
+                                hide();
+                            }
+                        });
+                    }
+
+                }catch (final Exception e){
+                    hide();
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            HomeActivity.this.showAlert("Unable to create scoket connection "+e.getMessage());
+                        }
+                    });
+                }
+
+            }
+        }
+
+        /*********************************************************************************************
+
+            @author Prakash
+            @Step1 Thread for printing on Kiosk
+             */
+
+
+         public class PrintThread extends Thread{
+
+
+                private BluetoothSocket bluetoothSocket = null;
+                private  InputStream connectedInputStream;
+                private  OutputStream connectedOutputStream;
+
+                public PrintThread(BluetoothSocket socket){
+                    bluetoothSocket = socket;
+                }
+
+
+                @Override
+                public void run() {
+                    super.run();
+                    //get Stream data
+
+                    try {
+                        if(bluetoothSocket != null) {
+                            connectedInputStream = bluetoothSocket.getInputStream();
+                            connectedOutputStream = bluetoothSocket.getOutputStream();
+                        }else{
+                            hide();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    HomeActivity.this.showAlert("Invalid connection");
+                                }
+                            });
+                        }
+                    }
+                    catch (final Exception e) {
+                        hide();
+                        e.printStackTrace();
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                HomeActivity.this.showAlert("Unable to create scoket connection "+e.getMessage());
+                            }
+                        });
+                    }
+
+
+                    if(bluetoothSocket.isConnected() || !bluetoothSocket.isConnected()){
+                        //send data on stream
+                        try{
+                            InputStream is = getAssets().open("bg_image.png");
+                            Bitmap bitmap = BitmapFactory.decodeStream(is);
+                            ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                            bitmap.compress(Bitmap.CompressFormat.PNG,100,stream);
+                            byte[] byteArray = stream.toByteArray();
+
+                            PrintElements printElements = new PrintElements();
+                            printElements.flight_no="AF 101";
+                            printElements.Kiosk_id="KIOSK01";
+                            BoardingPassData boardingPassData1=new BoardingPassData();
+                            boardingPassData1.id="BP001";
+                            boardingPassData1.pngImage= Base64.encodeToString(byteArray, Base64.DEFAULT);
+
+                            if(selectedViews.size()==1) {
+                                printElements.boardingPassData = new BoardingPassData[]{boardingPassData1};
+                            }else if(selectedViews.size()==2){
+                                printElements.boardingPassData=new BoardingPassData[]{boardingPassData1,boardingPassData1};
+                            }else if(selectedViews.size()==3){
+                                printElements.boardingPassData=new BoardingPassData[]{boardingPassData1,boardingPassData1,boardingPassData1};
+                            }
+
+                            String val=new Gson().toJson(printElements);
+                            connectedOutputStream.write(val.getBytes());
+                            Thread.sleep(2500);
+                            bluetoothSocket.close();
+                            connectedSocket = null;
+                            // Thread.currentThread().interrupt();
+                            endPrint();
+                            hide();
+                        }catch (final Exception e){
+                            hide();
+
+                            e.printStackTrace();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                      HomeActivity.this.showAlert("Unable to PRINT DATA "+e.getMessage());
+                                }
+                            });
+                        }
+                    }else{
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                HomeActivity.this.showAlert("Unable to PRINT DATA socket not found");
+                            }
+                        });
+                    }
+
+
+
+
+
+                }
+            }

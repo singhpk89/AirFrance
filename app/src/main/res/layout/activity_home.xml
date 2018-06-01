@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<RelativeLayout
+    android:id="@+id/searchView"
+    android:visibility="visible"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:minHeight="48dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content" />
+
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/bg_image"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+   <LinearLayout
+       android:id="@+id/bottom"
+       android:layout_width="match_parent"
+       android:layout_height="56dp"
+       android:orientation="horizontal"
+       android:layout_alignParentBottom="true">
+
+       <TextView
+           android:id="@+id/connectKiosk"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:background="@color/colorPrimary"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           android:elevation="8dp"
+           android:textColor="@android:color/white"
+           android:layout_centerHorizontal="true"
+           android:text="Connect"/>
+
+       <View
+           android:layout_width="1dp"
+           android:visibility="gone"
+           android:background="@android:color/white"
+           android:layout_height="match_parent"/>
+
+       <TextView
+           android:id="@+id/printPass"
+           android:visibility="gone"
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:gravity="center"
+           android:background="@color/colorPrimary"
+           android:textSize="22sp"
+           android:textStyle="bold"
+           android:elevation="8dp"
+           android:textColor="@android:color/white"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:text="Connect"/>
+
+   </LinearLayout>
+
+
+
+
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/printView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="imageClick"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_image"/>
+                <ImageView
+                    android:id="@+id/oneImg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_check_round"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="imageClick"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_image"/>
+                <ImageView
+                    android:id="@+id/twoImg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_check_round"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".4"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/three"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="imageClick"
+                android:layout_weight="1">
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/bg_image"/>
+                <ImageView
+                    android:id="@+id/threeImg"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/ic_check_round"
+                    android:scaleType="centerInside"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+       <Button
+           android:id="@+id/printSlip"
+           android:layout_width="match_parent"
+           android:textColor="@android:color/white"
+           android:text="Print"
+           android:onClick="imageClick"
+           android:background="@color/colorPrimary"
+           android:layout_height="0dp"
+           android:layout_weight=".1"/>
+
+
+    </LinearLayout>
+
+</FrameLayout>

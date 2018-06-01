@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Android-Multi-Bluetooth-Library-master/Bluetooth/Bluetooth_lib/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Android-Multi-Bluetooth-Library-master/Bluetooth/Bluetooth_sample/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/Android-Multi-Bluetooth-Library-master/Bluetooth/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Downloads/android-BluetoothChat-master/Application/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/SharedCode.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/App.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/activities/BluetoothManngerActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/activities/HomeActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/activities/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/activities/NameActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/adapter/FoundAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/adapter/LeDeviceListAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/adapter/PairedAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/broadcast/BTBroadcastReceiver.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/pojo/BoardingPassData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/pojo/PrintElements.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/service/SendSocketService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/util/BluetoothUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/util/DialogUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/util/PrintUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/utils/BlueToothConnector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/utils/BluetoothConnector.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/utils/BluetoothUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/airfrance/maxworth/com/airfrancenearbypoc/utils/CacheUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/btwiz/library/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_main_2.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/ble_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Demo/AirFrancePrintDemo/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Demo/AirFrancePrintDemo/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Demo/AirFrancePrintDemo/app/src/main/java/com/mespl/icts/printdemo/bluetoothscanner/BluetoothConnectionClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../Demo/AirFrancePrintDemo/app/src/main/java/com/mespl/icts/printdemo/bluetoothscanner/DataTransferClass.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../NewBRS/Ankita/BRSApp/Android/BRSApp/app/src/main/java/com/maxworth/mespl/android/brs/activity/BRSActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../NewBRS/Ankita/BRSApp/Android/BRSApp/app/src/main/java/com/maxworth/mespl/android/brs/pojo/GetBagtagInfoResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../NewBRS/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../NewBRS/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Sdk/KTSimpleBLEDemo/app/src/main/java/com/koamtac/ktsimplebledemo/KTSelfScan.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../../Sdk/KTSimpleBLEDemo/app/src/main/java/com/koamtac/ktsimplebledemo/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/build/generated/source/apt/debug/com/mespl/indigo/paxreconcilation/activities/ScanActivity_ViewBinding.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/build/generated/source/apt/debug/com/mespl/indigo/paxreconcilation/activities/SearchActivity_ViewBinding.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/App.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/JsonPojo/PaxInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/Webservice_classes/AsyncWebCall.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/Webservice_classes/WebAction.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/Webservice_classes/WebServiceBase.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/FlightDetailActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/LastPaxInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/LastPaxInfoActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/LoginActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/MesplBaseActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/PaxInfoActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/ScanActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/ScannerBaseActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/SearchActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/activities/WebActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/dto/FlightMaster.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/dto/PaxMaster.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/scanner/EmdkScanner.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/scanner/ScanEngine.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/updatecheck/DownloadApk.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/updatecheck/VersionCheck.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/updatecheck/VersionCheckActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/utils/CacheUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/utils/DialogUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/utils/ProgressDialogUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/com/mespl/indigo/paxreconcilation/utils/ViewUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/database/PaxDBHelper.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/java/pojo_classes/PaxInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/anim/enter.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/anim/exit.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/drawable/white_circle_custom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/activity_flight_info.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/activity_last_paxinfo.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/activity_pax_scan.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/activity_search.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/activity_version_check.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/app_bar_login.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/app_bar_scan.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/app_update_view.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/content_scan.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/view_pax_data.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/view_pax_flight.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/layout/view_search_item.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/Indigo/IndigoApp/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/adapter_classes/Logs.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/com/example/mespl/paxreconciliation/LoginActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/com/example/mespl/paxreconciliation/ScanActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/com/example/mespl/paxreconciliation/SyncSchedular.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/database/LoginDataBaseAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/java/dto/FlightMaster.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/res/layout/app_bar_login.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/res/layout/content_scan.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Freelance/Maxworth/BackUp/latest_pax_recon_01-02-2018/PaxReconciliation/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Work/Mediaagility/MediaAgilityBackup/employee_mobility_android/WhirlpoolMobility/app/src/main/java/whirlpool/mobility/findaride/viewmodel/FindRideDetailViewModel.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
